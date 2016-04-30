@@ -8,8 +8,9 @@ RUN dpkg --add-architecture i386 && \
         libgcc1:i386 libsm6:i386 libxdamage1:i386 libxext6:i386 \
         libxfixes3:i386 libxrandr2:i386 libxrender1:i386 libxtst6:i386 sudo \
         wget zlib1g:i386 libjpeg8:i386 libexpat1:i386 fonts-liberation:i386 \
-        libfontconfig1:i386 fontconfig-config:i386 ucf && \
-        libdbus-1-3:i386 libjpeg62:i386 libxinerama1:i386 && \
+        libfontconfig1:i386 fontconfig-config:i386 ucf \
+        libdbus-1-3:i386 libjpeg62:i386 libxinerama1:i386 \
+        libpng12-0:i386 procps && \
     echo "hybris	ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/hybris
 
 # Install teamviewer
